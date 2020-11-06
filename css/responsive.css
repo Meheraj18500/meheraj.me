@@ -1,1 +1,90 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  .header .bottom-header .carousel-item .carousel-caption {
+    margin-bottom: 6rem;
+  }
+  .header .bottom-header .carousel-item .carousel-caption h2,
+  .header .bottom-header .carousel-item .carousel-caption h3 {
+    font-size: 4rem;
+  }
+  .header .bottom-header .carousel-item .carousel-caption p {
+    width: 90%;
+  }
+  .services .card .text h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-manu {
+    width: 90%;
+    margin: auto;
+  }
+  .header .bottom-header .carousel-item .carousel-caption p {
+    width: 100%;
+  }
+  .services .card {
+    margin: 2rem 0;
+  }
+  .skills .skills-item {
+    margin-top: 6rem;
+  }
+  .footer .col-7 {
+    margin: auto;
+  }
+  .portfolio .right-left-content .right .box-1,
+  .portfolio .right-left-content .left .box-2 {
+    display: none;
+  }
+  .portfolio .right-left-content .right .box-2,
+  .portfolio .right-left-content .left .box-1 {
+    width: 100%;
+  }
+  .portfolio .right-left-content .left .box-1::before,
+  .portfolio .right-left-content .left .box-1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .portfolio .right-left-content .left .box-1::before {
+    width: 8rem;
+    height: 8rem;
+    background: #E76783;
+    border-radius: 50%;
+    left: -3.9rem;
+    border: 3px dotted #E76783;
+    z-index: 3;
+  }
+  .portfolio .right-left-content .left .box-1::after {
+    border-left: 3px dotted #FF8F6D;
+    z-index: 2;
+  }
+  .portfolio .right-left-content .left .box-1 .content {
+    margin: 0 0 12rem 7.5rem;
+  }
+  .portfolio .right-left-content .left .box-1 .content .project-item::before {
+    left: -5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-manu {
+    width: 85%;
+    margin: auto;
+  }
+  .header .bottom-header .carousel-item .carousel-caption h2,
+  .header .bottom-header .carousel-item .carousel-caption h3 {
+    font-size: 3rem;
+  }
+  .header .bottom-header .carousel-item .carousel-caption p {
+    display: none;
+  }
+  .header .bottom-header .carousel-item .carousel-caption .mobile-content {
+    display: block;
+  }
+}
