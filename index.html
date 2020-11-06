@@ -37,13 +37,18 @@
                             <!--http://duruthemes.com/demo/html/mccan/dark/index.html-->
                             <h3>Meheraj</h3>
                         </a>
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
-                            <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
-                            <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
-                            <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
-                            <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
-                        </ul>
+                        <button class="navbar-toggler navbar-toggler-right">
+                            <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarNab" ></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNab">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
+                                <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
+                                <li class="nav-item"><a href="#about" class="nav-link">about</a></li>
+                                <li class="nav-item"><a href="#portfolio" class="nav-link">portfolio</a></li>
+                                <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+                            </ul>
+                        </div>
                     </div>        
                 </nav>
             </div>
@@ -64,6 +69,8 @@
                             <div class="carousel-caption">
                                 <h3>I am a frontend developer</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat possimus doloribus velit, harum accusantium quia repellendus debitis, neque vero.</p>
+                                <!-- Mobile Content -->
+                                <P class="mobile-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi soluta reprehenderit harum! Voluptas, atque natus!</P>
                                 <a href="javascript:void()">See More</a>
                             </div>
                         </div>
@@ -73,6 +80,8 @@
                             <div class="carousel-caption">
                                 <h2>I am a backend developer</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat possimus doloribus velit, harum accusantium quia repellendus debitis, neque vero.</p>
+                                <!-- Mobile Content -->
+                                <P class="mobile-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi soluta reprehenderit harum! Voluptas, atque natus!</P>
                                 <a href="javascript:void()">See More</a>
                             </div>
                         </div>
@@ -82,6 +91,8 @@
                             <div class="carousel-caption">
                                 <h2>I am a full stack web developer</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat possimus doloribus velit, harum accusantium quia repellendus debitis, neque vero.</p>
+                                <!-- Mobile Content -->
+                                <P class="mobile-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi soluta reprehenderit harum! Voluptas, atque natus!</P>
                                 <a href="javascript:void()">See More</a>
                             </div>
                         </div>
@@ -165,7 +176,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati eligendi perferendis, atque consectetur eaque accusantium sunt qui. Perspiciatis, cumque accusamus.!</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-md-6">
                     <img src="img/skill-1.jpg" class="img-fluid rounded" alt="skills">
                 </div>
@@ -461,7 +472,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <textarea name="Message" placeholder="Message*" required></textarea>
+                                <textarea name="Message" rows="5" placeholder="Message*" required></textarea>
                                 <input type="submit" value="Submit">
                             </div>
                         </div>
@@ -474,7 +485,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-7">
                     <div class="social-link">
                         <h3>Social link</h3>
                         <ul>
@@ -485,7 +496,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-7">
                     <div class="experience">
                         <h3>experience</h3>
                         <ul>
@@ -497,7 +508,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-7">
                     <div class="gat-in-tuch">
                         <h3>Gat in tuch</h3>
                         <ul>
@@ -516,10 +527,14 @@
             </div>
         </div>
     </footer>
-
+    <!--------------------------------- Footer End --------------------------------->
+    <!------------- Jquery File ------------->
     <script src="js/jquery.min.js"></script>
+    <!------------- Fontawesome Kit ------------->
     <script src="https://kit.fontawesome.com/32c332ccd9.js" crossorigin="anonymous"></script>
+    <!------------- Bootstrap js ------------->
     <script src="js/bootstrap.min.js"></script>
+    <!------------- Main js ------------->
     <script src="js/main.js"></script>
 
 </body>
